@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b2432;
+  color: #ffffff;
+}
+
+nav {
+  background-color: #0b2432;
+  padding: 16px 32px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+nav h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-flex;
+  align-items: center;
+}
+
+#destinationSearch {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  min-width: 260px;
+  outline: none;
+  background-color: #ffffff;
+  color: #0b2432;
+  font-size: 0.95rem;
+}
+
+#btn-search {
+  padding: 10px 18px;
+  background-color: #1e9b8b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+#btn-clear {
+  padding: 10px 18px;
+  background-color: #0f6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+#background {
+  background-image:
+    linear-gradient(rgba(8, 30, 45, 0.55), rgba(8, 30, 45, 0.55)), url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 6vw;
+}
+
+#content {
+  max-width: 520px;
+}
+
+#content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e3edf3;
+}
+
+#resultDiv {
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+#resultDiv div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 10px;
+  max-width: 25rem;
+  color: black;
+}
+
+#resultDiv div img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#resultDiv div p {
+  text-align: center;
+}
+
+#aboutbackground {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+#aboutbackground > h1 {
+    font-size: 3rem;
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+#aboutbackground > p {
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+#content > h1 {
+    font-size: 3rem;
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+#content > p {
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 240px repeat(3, minmax(180px, 1fr));
+  align-items: center;
+  gap: 32px;
+  padding-left: 10rem;
+  padding-right: 6rem;
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.team > h2 {
+  font-size: 3.5rem;
+  line-height: 0.9;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+.team > h2 span {
+  display: block;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  gap: 10px;
+  padding: 10px 6px;
+    margin: 0;
+  width: 100%;
+}
+
+.team-card .avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.team-card .avatar::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.team-card > h3 {
+    text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.team-card > p {
+    text-align: center;
+  max-width: 18rem;
+    padding: 0;
+    margin: 0;
+  color: #e3edf3;
+}
+
+.team-card .position {
+  margin-top: 6px;
+  padding: 6px 14px;
+  background-color: #1e4f6b;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+#contact-background {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.contact-container > h1 {
+    font-size: 3rem;
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+.contact-container > p {
+    width: 50rem;
+    padding-left: 10rem;
+}
+
+.form-container {
+    display: block;
+    gap: 10px;
+}
+
+.form-container label {
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+.form-container input, textarea {
+    width: 20rem;
+    border: 1px solid #c0bfbf;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+    color: #c0bfbf;
+}
+
+::placeholder {
+    color: #c0bfbf;
+    font-size: 1rem;
+}
+
+.form-container button {
+    width: 20rem;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+}
